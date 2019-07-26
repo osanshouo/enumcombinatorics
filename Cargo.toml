@@ -1,0 +1,14 @@
+[package]
+name = "enumcombinatorics"
+version = "0.1.0"
+authors = ["osanshouo <53166653+osanshouo@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+streaming-iterator = { version = "0.1.4", optional = true }
+
+[features]
+default = []
+streaming = [ "streaming-iterator", ]
